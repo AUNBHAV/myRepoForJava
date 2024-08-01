@@ -13,8 +13,6 @@ stages:
   displayName: Build stage
   jobs: 
   - job: MavenPackageAndPublishArtifact
-    pool:
-      vmImage: 'Hosted Agent'
     steps:
     - task: Maven@3
       displayName: 'Maven Package'
